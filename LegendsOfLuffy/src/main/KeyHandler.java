@@ -11,7 +11,7 @@ import java.awt.event.KeyListener;
  * Connects key press to screen movement
  * 
  * W = up, A = left, S = down, D = right
- * @author stefanchirica
+ *
  */
 public class KeyHandler implements KeyListener {
 

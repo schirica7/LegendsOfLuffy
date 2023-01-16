@@ -6,10 +6,6 @@ package main;
 
 import javax.swing.JFrame;
 
-/**
- * Main game class
- * @author stefanchirica
- */
 public class MainClass {
 
     public static JFrame window;
@@ -28,7 +24,6 @@ public class MainClass {
         GamePanel gamePanel = new GamePanel();
         window.add(gamePanel);
         window.pack();
-        // abcdefghijklmnopqrstuvwxyzî1234567890-=+_!ÎâăÂĂ';":.,></./?țȚțȚȚȚȚț
         window.setLocationRelativeTo(null);
         window.setVisible(true);
 

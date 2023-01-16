@@ -136,7 +136,7 @@ public class Player extends Entity {
             villainCount++;
             gp.playSE(1);
             gp.obj[i] = null;
-            gp.ui.showMessage("You slayed a villain!");
+            gp.ui.showMessage("Lord Rob: NOOOOO!");
 
             checkLevel();
             //This is where the game levels up
@@ -150,7 +150,7 @@ public class Player extends Entity {
     /**
      * Levels up if there are 5 keys
 
- "Level up" = display new map, reset villainCount counter, and restart time
+     "Level up" = display new map, reset villainCount counter, and restart time
      */
     public void checkLevel() {
         if (villainCount == 5) {
@@ -160,20 +160,33 @@ public class Player extends Entity {
             villainCount = 0;
             setDefaultValues();
 
+            
+            /*if (gp.level == 0) {
+                gp.ui.showMessage("Lord Rob: Welcome challenger, good luck getting through this gauntlet. "
+                        + "YOU'LL NEVER MAKE IT!");
+            }*/
+            
+            if (gp.level == 1) {
+                gp.ui.showMessage("Lord Rob: You'll never beat me!");
+                gp.tileM.loadMap("/maps/map01.txt");
+                //System.out.println(gp.level);
+                gp.keySet(); 
+            }
+            
             if (gp.level == 2) {
-                gp.ui.showMessage("Level up!");
+                gp.ui.showMessage("Lord Rob: Beginner's Luck!");
                 gp.tileM.loadMap("/maps/map02.txt");
                 //System.out.println(gp.level);
                 gp.keySet();
             }
 
             if (gp.level == 3) {
-                gp.ui.showMessage("Level up!");
+                gp.ui.showMessage("Lord Rob: How are you this lucky?!");
                 //System.out.println(gp.level);
                 gp.tileM.loadMap("/maps/map03.txt");
             }
             if (gp.level == 4) {
-                gp.ui.showMessage("Level up!");
+                gp.ui.showMessage("Lord Rob: This can't be possible!!");
                 gp.maxWorldCol = 19;
                 gp.maxWorldRow = 17;
 
@@ -182,7 +195,7 @@ public class Player extends Entity {
                 gp.tileM.loadMap("/maps/map04.txt");
             }
             if (gp.level == 5) {
-                gp.ui.showMessage("Level up!");
+                gp.ui.showMessage("Lord Rob: How are you doing this?!?");
                 gp.maxWorldCol = 32;
                 gp.maxWorldRow = 23;
 
@@ -234,11 +247,11 @@ public class Player extends Entity {
     public void getPlayerImage() {
         try {
 
-            up = ImageIO.read(getClass().getResourceAsStream("/playerImages/dababy up.png"));
-            down = ImageIO.read(getClass().getResourceAsStream("/playerImages/dababy down.png"));
-            left = ImageIO.read(getClass().getResourceAsStream("/playerImages/dababy left.png"));
-            right = ImageIO.read(getClass().getResourceAsStream("/playerImages/dababy right.png"));
-
+            up = ImageIO.read(getClass().getResourceAsStream("/playerImages/luffywalk1.png"));
+            down = ImageIO.read(getClass().getResourceAsStream("/playerImages/luffywalk2.png"));
+            left = ImageIO.read(getClass().getResourceAsStream("/playerImages/luffywalk2.png"));
+            right = ImageIO.read(getClass().getResourceAsStream("/playerImages/luffywalk1.png"));
+       //     idle = ImageIO.read(getClass().getResourceAsStream("/playerImages/luffyidle.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }

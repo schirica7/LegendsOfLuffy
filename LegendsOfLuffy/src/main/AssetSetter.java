@@ -8,8 +8,6 @@ import objects.Villain;
 
 /**
  * Sets objects on the screen
- * 
- * @author stefanchirica
  */
 public class AssetSetter {
 

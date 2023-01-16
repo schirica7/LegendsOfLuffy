@@ -11,7 +11,6 @@ import main.GamePanel;
 
 /**
  *Parent class for all objects used in game
- * @author stefanchirica
  */
 public class SuperObject {
 

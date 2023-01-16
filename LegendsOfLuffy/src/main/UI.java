@@ -10,9 +10,8 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import objects.Villain;
 
-/**
- *
- * @author stefanchirica
+/*
+ * 
  */
 public class UI {
 
@@ -47,7 +46,7 @@ public class UI {
             int x;
             int y;
 
-            text = "Congratulations! You finished!";
+            text = "Lord Rob: I... I can't believe you beat me...";
 
             textLength = (int) g2.getFontMetrics().getStringBounds(text, g2).getWidth();
             x = gp.screenWidth / 2 - textLength / 2;

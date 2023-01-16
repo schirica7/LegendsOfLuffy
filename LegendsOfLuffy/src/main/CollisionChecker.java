@@ -10,7 +10,6 @@ import entity.Entity;
  * Checks to make sure that if the tiles are solid, then the player cannot pass
  * through them
  *
- * @author stefanchirica
  */
 public class CollisionChecker {
 

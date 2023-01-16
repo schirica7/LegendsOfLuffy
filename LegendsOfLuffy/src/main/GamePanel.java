@@ -58,7 +58,7 @@ public class GamePanel extends javax.swing.JPanel implements Runnable {
     //Set player's default position
     int playerX = 100;
     int playerY = 100;
-    int playerSpeed = 3;
+    int playerSpeed = 100;
 
     //Game variables
     public int key;
@@ -71,6 +71,7 @@ public class GamePanel extends javax.swing.JPanel implements Runnable {
         initComponents();
         this.addKeyListener(keyH);
         this.setFocusable(true);
+        ui.showMessage("Lord Rob: You'll never beat my gauntlet! Mwahahaha...");
     }
 
     /**

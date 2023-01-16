@@ -10,7 +10,6 @@ import javax.imageio.ImageIO;
 
 /**
  * Villain object for game
- * @author stefanchirica
  */
 public class Villain extends SuperObject{
     
@@ -19,7 +18,7 @@ public class Villain extends SuperObject{
         name = "Villain";
         
         try {
-            image = ImageIO.read(getClass().getResourceAsStream("/objectImages/key.png"));
+            image = ImageIO.read(getClass().getResourceAsStream("/objectImages/villain.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
