@@ -58,7 +58,7 @@ public class GamePanel extends javax.swing.JPanel implements Runnable {
     //Set player's default position
     int playerX = 100;
     int playerY = 100;
-    int playerSpeed = 100;
+    int playerSpeed = 10;
 
     //Game variables
     public int key;
