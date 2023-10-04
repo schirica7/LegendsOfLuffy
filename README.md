@@ -1,3 +1,3 @@
 # LegendsOfLuffy
 
-Primarily coded in January 2023. Visual improvements in October 2023.
+Primarily coded in January 2022. Visual improvements in January and October 2023.
