@@ -248,7 +248,7 @@ public class Player extends Entity {
         try {
 
             up = ImageIO.read(getClass().getResourceAsStream("/playerImages/luffywalk1.png"));
-            down = ImageIO.read(getClass().getResourceAsStream("/playerImages/luffywalk2.png"));
+            down = ImageIO.read(getClass().getResourceAsStream("/playerImages/luffywalk1.png"));
             left = ImageIO.read(getClass().getResourceAsStream("/playerImages/luffywalk2.png"));
             right = ImageIO.read(getClass().getResourceAsStream("/playerImages/luffywalk1.png"));
        //     idle = ImageIO.read(getClass().getResourceAsStream("/playerImages/luffyidle.png"));
